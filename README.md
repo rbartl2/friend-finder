@@ -6,11 +6,11 @@ Welcome to friend finder, a dating app created using node, express, and path. In
 
 ## How to get started
 
-    1. Visit ""
+    1. Visit "https://intense-wave-51295.herokuapp.com/"
     2. Click the "Go to survey" button
     3. Fill out the form, entering your name and a valid picture URL. Select a number from the dropdown of each question and click submit.
     4. Enjoy your dreamy match!
 
 ## Check out my deployed app!
 
-[Click here]() to find your match!
+[Click here](https://intense-wave-51295.herokuapp.com/) to find your match!

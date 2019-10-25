@@ -1,3 +1,4 @@
+// array of friends
 var friends = [
     {
         name: "Brad Pitt",

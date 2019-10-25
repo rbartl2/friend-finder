@@ -183,6 +183,8 @@
 
 
 <script>
+  // on click event to go ahead and validate form
+  // if anything is black, then return it false
     $("#submit").on("click", function(){
         function validateForm(){
             var isValid = true;
@@ -193,7 +195,7 @@
             });
             return isValid;
         }
-
+        // if user data is valid, create an object for their data
         if(validateForm()){
             var userData = {
                 name: $("#name").val(),
@@ -211,9 +213,11 @@
                     $("#q10").val(),
                 ]
             };
-
+            // grab the url of the website
             var currentURL = window.location.origin;
 
+            // ajax post the data to the friends API
+            // grab the result so that the best match name and photo are displayed in the modal
             $.post(currentURL + "/api/friends", userData, function(data){
                 $("#matchName").text(data.name);
                 $("#matchIMG").attr("src", data.photo);
